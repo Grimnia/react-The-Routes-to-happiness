@@ -6,7 +6,6 @@ import Happy from './components/Happy';
 import Sleepy from './components/Sleepy';
 import Guilty from './components/Guilty';
 
-// your code goes here
 class Home extends Component{
   render(){
     return(
@@ -17,23 +16,21 @@ class Home extends Component{
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/happy">Happy</Link>
+              <Link to="/Happy">Happy</Link>
             </li>
             <li>
-              <Link to="/guilty">Guilty</Link>
+              <Link to="/Guilty">Guilty</Link>
             </li>
             <li>
-              <Link to="/sleepy">Sleepy</Link>
+              <Link to="/Sleepy">Sleepy</Link>
             </li>
           </ul>
-          <hr/>
-          <Route exact path="/" component={Home}/>
-          <Route path="/happy" componet={Happy}/>
-          <Route path="/guilty" componet={Guilty}/>
-          <Route path="/sleppy" componet={Sleepy}/>
+          <Route path="/Home"  component={<nav></nav>} />
+          <Route path="/Happy" component={Happy}/>
+          <Route path="/Guilty" component={Guilty}/>
+          <Route path="/Sleepy" component={Sleepy}/>
         </div>
       </Router>
-      // your code goes here
     )
   }
 }
